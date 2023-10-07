@@ -1,0 +1,11 @@
+<%= simple_form_for pet do |f| %>
+  <%= f.input :name %>
+
+  <%= f.input :address %>
+
+  <%= f.input :species, collection: Pet::SPECIES %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Back', pets_path, class: 'btn' %>
